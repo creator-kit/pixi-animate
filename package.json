@@ -51,7 +51,7 @@
     "watch": "parallelshell \"npm run watch:dist\" \"npm run watch:lib\"",
     "predocs-live": "npm run docs",
     "docs-live": "gh-pages -d docs",
-    "postversion": "npm run build && npm test",
+    "postversion": "npm run build",
     "publish:patch": "npm version patch && npm publish",
     "publish:minor": "npm version minor && npm publish",
     "publish:major": "npm version major && npm publish",
