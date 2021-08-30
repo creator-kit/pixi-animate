@@ -117,6 +117,8 @@ const load = function(options, parent, complete, basePath, loader, metadata) {
     loader = loader || new PIXI.loaders.Loader();
 
     function done() {
+        alert("PING")
+        debugger;
         let instance = (options.createInstance && typeof options.stage === "function") ? new options.stage() : null;
         if (options.parent) {
             options.parent.addChild(instance);
